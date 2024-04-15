@@ -1,0 +1,492 @@
+messages:
+    - key: com.alphax.api.success
+      number: 20000
+      type: SUCCESS
+      text: "Operation successful."
+    - key: com.alphax.api.login.success
+      number: 20001
+      type: SUCCESS
+      text: "Login successful."
+    - key: com.alphax.controller.exception
+      number: 20002
+      type: ERROR
+      text: "Internal Server error."
+    - key: com.alphax.commons.error.invalidMessageTextFormat
+      number: 20003
+      type: ERROR
+      text: "Internal error: Invalid message text format. Please contact support for further assistance."
+    - key: com.alphax.controller.deliveryNoteFrom.bsn.to.etStamm.success
+      number: 20004
+      type: SUCCESS
+      text: "Process Successful with Conflict in some Delivery notes."
+    - key: com.alphax.api.logout.success
+      number: 20005
+      type: SUCCESS
+      text: "Logout successful."
+    - key: com.alphax.api.login.warn
+      number: 20006
+      type: WARNING
+      text: "Your password will expire in %s days. Please change your password on time."
+      
+    - key: com.alphax.controller.list.empty
+      number: 20101
+      type: ERROR
+      text: "No records found for '%s' list."
+    - key: com.alphax.controller.list.fail
+      number: 20102
+      type: ERROR
+      text: "Failed to get '%s' list."
+    - key: com.alphax.controller.create.fail
+      number: 20103
+      type: ERROR
+      text: "'%s' Creation Failed."
+    - key: com.alphax.api.authentication.fail
+      number: 20104
+      type: ERROR
+      text: "Authentication failed."
+    - key: com.alphax.api.cobol.timeout.error
+      number: 20105
+      type: ERROR
+      text: "Unable to execute Cobol Command / Program in defined Time period."
+    - key: com.alphax.api.cobol.command.fail
+      number: 20106
+      type: ERROR
+      text: "Unable to execute Cobol Command."
+    - key: com.alphax.api.cobol.program.fail
+      number: 20107
+      type: ERROR
+      text: "Unable to execute Cobol Program."
+    - key: com.alphax.api.db.operation.fail
+      number: 20108
+      type: ERROR
+      text: "Unable to execute query on data base."
+    - key: com.alphax.api.controller.search.fail
+      number: 20109
+      type: ERROR
+      text: "Failed to search '%s' in system."
+    - key: com.alphax.api.controller.vin.length.invalid
+      number: 20110
+      type: ERROR
+      text: "Minimum length of the vehicle identification number (VIN) should be 18."
+    - key: com.alphax.controller.get.details.fail
+      number: 20111
+      type: ERROR
+      text: "Failed to get '%s' Details."
+    - key: com.alphax.api.controller.record.not.found
+      number: 20112
+      type: ERROR
+      text: "Failed due to '%s' details not found for this Id."
+    - key: com.alphax.api.controller.env.login.fail
+      number: 20113
+      type: ERROR
+      text: "Log in Not possible. Please try again later."
+    - key: com.alphax.api.controller.env.schema.invalid
+      number: 20114
+      type: ERROR
+      text: "Data library / scheme not available."
+    - key: com.alphax.api.controller.credential.invalid
+      number: 20115
+      type: ERROR
+      text: "Username or password is incorrect."
+    - key: com.alphax.api.controller.dataLib.invalid
+      number: 20116
+      type: ERROR
+      text: "Get library program not valid." 
+    - key: com.alphax.api.controller.orolle.invalid
+      number: 20117
+      type: ERROR
+      text: "OROLLE program not valid."
+    - key: com.alphax.api.controller.env.fail
+      number: 20118
+      type: ERROR
+      text: "Environment Setup Failed."
+    - key: com.alphax.api.controller.permission.fail
+      number: 20119
+      type: ERROR
+      text: "Failed in get user permission call."
+    - key: com.alphax.api.controller.customer.one.fail
+      number: 20120
+      type: ERROR
+      text: "Failed in Customer One check call."
+    - key: com.alphax.api.controller.customer.flag.fail
+      number: 20121
+      type: ERROR
+      text: "Failed in edit flag check call."
+    - key: com.alphax.api.controller.customer.edit.flag.invalid
+      number: 20122
+      type: ERROR
+      text: "Flag value not match."
+    - key: com.alphax.api.controller.customer.affect.flag.invalid
+      number: 20123
+      type: ERROR
+      text: "Affects value does not match."
+    - key: com.alphax.api.controller.authority.flag.fail
+      number: 20124
+      type: ERROR
+      text: "Get authority flag check failed."
+    - key: com.alphax.api.controller.customer.default.fail
+      number: 20125
+      type: ERROR
+      text: "Get customer default data call failed."
+    - key: com.alphax.api.controller.vehicle.default.not.found
+      number: 20126
+      type: ERROR
+      text: "Vehicles standard information not available for this VIN."
+    - key: com.alphax.api.controller.vehicle.marke.not.found
+      number: 20127
+      type: ERROR
+      text: "Vehicles Marke information not available for this WHC."
+    - key: com.alphax.api.controller.vehicle.default.fail
+      number: 20128
+      type: ERROR
+      text: "Get vehicles standard information call failed."
+    - key: com.alphax.api.controller.multiple.record.found
+      number: 20129
+      type: ERROR
+      text: "Failed due to more then one records found for this Id."
+    - key: com.alphax.api.controller.customer.create.success
+      number: 20130
+      type: SUCCESS
+      text: "Customer created successfully."
+    - key: com.alphax.api.controller.customer.create.fail
+      number: 20131
+      type: ERROR
+      text: "Customer not Created. Please try again later."
+    - key: com.alphax.api.controller.customer.update.success
+      number: 20132
+      type: SUCCESS
+      text: "Customer updated successfully."
+    - key: com.alphax.api.controller.customer.update.fail
+      number: 20133
+      type: ERROR
+      text: "Customer not updated. Please try again later."
+    - key: com.alphax.api.controller.vehicle.create.fail
+      number: 20134
+      type: ERROR
+      text: "Vehicle not Created. Please try again later."
+    - key: com.alphax.api.controller.licence.duplicate.error
+      number: 20135
+      type: ERROR
+      text: "Licence Plate Number is already exists in System."
+    - key: com.alphax.api.controller.vin.duplicate.error
+      number: 20136
+      type: ERROR
+      text: "Vehicle Identification Number is already exists in System."
+    - key: com.alphax.api.controller.companyId.invalid
+      number: 20137
+      type: ERROR
+      text: "Provided Company Id is invalid."
+    - key: com.alphax.api.controller.search.pgsize.invalid
+      number: 20138
+      type: ERROR
+      text: "Page size should be less then 100."
+    - key: com.alphax.api.controller.vin.invalid
+      number: 20139
+      type: ERROR
+      text: "Provided VIN is invalid."
+    - key: com.alphax.api.client.ip.invalid
+      number: 20140
+      type: ERROR
+      text: "Unable to get Client IP Address."
+    - key: com.alphax.api.token.expired
+      number: 20141
+      type: ERROR
+      text: "JWT Token has expired."
+    - key: com.alphax.api.token.invalid
+      number: 20142
+      type: ERROR
+      text: "JWT Token is invalid."
+    - key: com.alphax.api.parameter.invalid
+      number: 20143
+      type: ERROR
+      text: "'%s' : Rejected Field '%s'."
+    - key: com.alphax.api.controller.vin.checksum.error
+      number: 20144
+      type: ERROR
+      text: "Vehicle Identification Number(VIN) checksum is not valid."
+    - key: com.alphax.api.controller.agencyId.invalid
+      number: 20145
+      type: ERROR
+      text: "Provided Agency Id is invalid."
+    - key: com.alphax.api.controller.vehicle.warehouseId.invalid
+      number: 20146
+      type: ERROR
+      text: "Provided warehouse number is invalid."
+    - key: com.alphax.api.constraint.violation
+      number: 20147
+      type: ERROR
+      text: "Field '%s' : '%s'."
+    - key: com.alphax.api.controller.deliveryNote.flag.invalid
+      number: 20148
+      type: ERROR
+      text: "Flag value is incorrect."
+    - key: com.alphax.controller.update.fail
+      number: 20149
+      type: ERROR
+      text: "'%s' Updation Failed."
+    - key: com.alphax.api.controller.deliveryNoteTo.bsn.failed
+      number: 20150
+      type: ERROR
+      text: "Delivery Note to BSN take over Failed."
+    - key: com.alphax.api.controller.deliveryNoteFrom.bsn.to.etStamm.failed
+      number: 20151
+      type: ERROR
+      text: "Delivery Note From BSN to ETStamm take over Failed."
+    - key: com.alphax.api.controller.filter.searchBy.name.invalid
+      number: 20152
+      type: ERROR
+      text: "Filter criteria searchBy name is not valid"  
+    - key: com.alphax.api.controller.invalid.value
+      number: 20153
+      type: ERROR
+      text: "Invalid '%s' "
+    - key: com.alphax.api.controller.duplicate.order.number
+      number: 20154
+      type: SUCCESS
+      text: "Order number already available in BSN."
+    - key: com.alphax.api.controller.order.part.failed
+      number: 20155
+      type: ERROR
+      text: "Failed to add Parts in Order Basket."
+    - key: com.alphax.api.controller.create.ordernumber.failed
+      number: 20156
+      type: ERROR
+      text: "Failed to generate Order Number."
+    - key: com.alphax.api.controller.deliveryNote.delete.failed
+      number: 20157
+      type: ERROR
+      text: "Failed to Delete the selected delivery Notes."
+    - key: com.alphax.controller.invalid.date.format
+      number: 20158
+      type: ERROR
+      text: "Invalid date format"
+    - key: com.alphax.api.controller.announcecancel.deliveryNote.delete.failed
+      number: 20159
+      type: ERROR
+      text: "Failed to delete the selected Announced and Cancelled delivery Notes."
+    - key: com.alphax.controller.simulation.process.success
+      number: 20160
+      type: SUCCESS
+      text: " '%s' delivery Notes generated successfully."
+    - key: com.alphax.controller.simulation.process.failed
+      number: 20161
+      type: ERROR
+      text: "Unable to generate the delivery Notes for simulation."
+    - key: com.alphax.controller.auto.process.failed
+      number: 20162
+      type: ERROR
+      text: "Automatic processing of delivery Notes failed." 
+    - key: com.alphax.controller.order.transferET.mandatory.failed
+      number: 20163
+      type: ERROR
+      text: "You must first fill in all the required fields."
+    - key: com.alphax.api.controller.order.transferto.etStamm.failed
+      number: 20164
+      type: ERROR
+      text: "Transfer Orders to ETStamm take over Failed."
+    - key: com.alphax.api.controller.order.part.replacement.faild
+      number: 20165
+      type: ERROR
+      text: "Selection blocked by another user or already available in BSN"
+    - key: com.alphax.controller.simulation.conflict.process.failed
+      number: 20166
+      type: ERROR
+      text: "Unable to generate the Conflict delivery Notes for simulation."
+    - key: com.alphax.controller.business.cases.50.failed
+      number: 20167
+      type: ERROR
+      text: "The part could not be found in the parts master."
+    - key: com.alphax.api.controller.orders.delete.failed
+      number: 20168
+      type: ERROR
+      text: "Failed to delete the selected open Orders and Order parts."
+    - key: com.alphax.controller.business.cases.67.failed
+      number: 20169
+      type: ERROR
+      text: "Part number available on counting list. Manual BA67 therefore not possible."
+    - key: com.alphax.controller.business.cases.01.failed
+      number: 20170
+      type: ERROR
+      text: "Part no. not yet created in ETSTAMM. Not even in the TK module."
+    - key: com.alphax.controller.business.cases.05.failed
+      number: 20171
+      type: ERROR
+      text: "Part number not yet created in ETSTAMM."
+    - key: com.alphax.controller.business.cases.17_01.failed
+      number: 20172
+      type: ERROR
+      text: "Part position already exists in all warehouse. New installation implausible."
+    - key: com.alphax.controller.business.cases.17_02.failed
+      number: 20173
+      type: ERROR
+      text: "Part number not yet created in TKFHER and TLEKAT."
+    - key: com.alphax.controller.business.cases.09.failed
+      number: 20174
+      type: ERROR
+      text: "BA09 is not allowed for this manufacturer."
+    - key: com.alphax.controller.business.cases.program.bsn477.failed
+      number: 20175
+      type: ERROR
+      text: "Problem occurred in BSN477CL Program."
+    - key: com.alphax.controller.part.cobol.program.fail
+      number: 20176
+      type: ERROR
+      text: "Problem occurred in '%s' Program."
+    - key: com.alphax.controller.part.relocation.fail
+      number: 20177
+      type: ERROR
+      text: "Please provide the Warehouse details for part relocation."
+    - key: com.alphax.api.controller.admin.setting.delete.failed
+      number: 20178
+      type: ERROR
+      text: "Failed to delete the selected '%s'."
+    - key: com.alphax.controller.order.part.movement.error
+      number: 20179
+      type: ERROR
+      text: "Access only permitted with BA06, please correct."
+    - key: com.alphax.controller.check.orders.fail
+      number: 20180
+      type: ERROR
+      text: "check order in ESKDAT failed"
+    - key: com.alphax.check.daily.closing.process
+      number: 20181
+      type: ERROR
+      text: "Daily closing active! No operations can be carried out during the end of the day."
+    - key: com.alphax.check.installation.update.process
+      number: 20182
+      type: ERROR
+      text: "It is currently an update was installed. Registration not possible."
+    - key: com.alphax.check.end.of.year.process
+      number: 20183
+      type: ERROR
+      text: "The year-end process is running. Registration not possible."  
+    - key: com.alphax.api.logout.fail
+      number: 20184
+      type: ERROR
+      text: "Unable to Logout from System." 
+    - key: com.alphax.controller.invalid.user.login
+      number: 20185
+      type: ERROR
+      text: "User not administered for alphaX." 
+    - key: com.alphax.controller.invalid.user.roleAndAgency
+      number: 20186
+      type: ERROR
+      text: "Login without role and branch assignment is not possible." 
+    - key: com.alphax.api.controller.unique.constraint.fail
+      number: 20189
+      type: ERROR
+      text: "This entry already exists '%s'." 
+    - key: com.alphax.api.controller.warehouses.invalid
+      number: 20190
+      type: ERROR
+      text: "Warehouse Ids are invalid."
+    - key: com.alphax.api.controller.allowed.agencys.invalid
+      number: 20191
+      type: ERROR
+      text: "Allowed agency Ids are invalid."
+    - key: com.alphax.api.controller.alphax.setup.fail
+      number: 20192
+      type: ERROR
+      text: "The initial setup of an admin user for alphaX has already been carried out. The authorized user is %s."
+    - key: com.alphax.controller.get.selection.details.fail
+      number: 20193
+      type: ERROR
+      text: "Keine Daten für diese Auswahl vorhanden."
+    - key: com.alphax.check.maintenance.work.process
+      number: 20194
+      type: ERROR
+      text: "Alphaplus maintenance work. Please try again later."  
+    - key: com.alphax.controller.inventory.archived.data.check.fail
+      number: 20195
+      type: ERROR
+      text: "There is no data for this period."
+    - key: com.alphax.api.controller.add.parts.list.fail
+      number: 20196
+      type: ERROR
+      text: "Selection unsuccessful, the parts already exist on other counting lists."
+    - key: com.alphax.api.controller.storage.location.fail
+      number: 20197
+      type: ERROR
+      text: "Part has more than one storage location."
+    - key: com.alphax.api.controller.part.master.data.fail
+      number: 20198
+      type: ERROR
+      text: "Part is not available in master data."
+    - key: com.alphax.api.controller.storage.master.data.fail
+      number: 20199
+      type: ERROR
+      text: "Storage location does not match master data."
+    - key: com.alphax.controller.inventory.archived.file.check.fail
+      number: 20200
+      type: ERROR
+      text: "There is no data for this camp and this period."
+    - key: com.alphax.controller.inventory.pdf.download.fail
+      number: 20201
+      type: ERROR
+      text: "Could not download PDF for current status."
+    - key: com.alphax.api.controller.inventory.counting.list.status.fail
+      number: 20202
+      type: ERROR
+      text: "Der Status der Zählliste hat sich zwischenzeitlich geändert. Die Seite wird neu geladen."
+    - key: com.alphax.api.controller.BA49.conversion.fail
+      number: 20203
+      type: ERROR
+      text: "The record type conversion could not be carried out because there is a stock or outstanding order."
+    - key: com.alphax.api.controller.report.record.not.found
+      number: 20204
+      type: ERROR
+      text: "Report does not contains any record."
+    - key: com.alphax.api.controller.add.part.fail
+      number: 20205
+      type: ERROR
+      text: "Selection unsuccessful, the part already exists on another counting list."
+      number: 20206
+      type: ERROR
+      text: "Delivery note done.Please choose a different delivery note."
+    - key: com.alphax.controller.ba.25.delivery.note.closed.failed
+      number: 20207
+      type: ERROR
+      text: "Delivery note closed."
+    - key: com.alphax.controller.ba.25.delivery.note.not.available.failed
+      number: 20208
+      type: ERROR
+      text: "Delivery note not available. Please select another delivery note."
+    - key: com.alphax.controller.ba.25.delivery.note.create.auto.failed
+      number: 20209
+      type: ERROR
+      text: "Delivery note not available but will create automatically for VC - 7,8 and 9."
+    - key: com.alphax.controller.ba.25.price.check.failed
+      number: 20210
+      type: ERROR
+      text: "Price implausible!."
+    - key: com.alphax.controller.ba.25.Marke.check.failed
+      number: 20211
+      type: ERROR
+      text: "Marke not determined."
+    - key: com.alphax.api.password.expired
+      number: 20212
+      type: ERROR
+      text: "Failed: %s."
+    - key: com.alphax.api.logfile.invalid.access
+      number: 20213
+      type: ERROR
+      text: "The log data can only be displayed for local installations via this area."
+    - key: com.alphax.api.controller.parts.check.fail
+      number: 20214
+      type: ERROR
+      text: "Part(s) not available in the selected record type."
+      
+      
+    - key: com.alphax.vehicle.licence.validation.fail1
+      number: 1578
+      type: ERROR
+      text: "The official license plate is missing !"
+    - key: com.alphax.vehicle.licence.validation.fail2
+      number: 1590
+      type: ERROR
+      text: "Vehicle master not available, please enter the customer number !"
+    - key: com.alphax.vehicle.licence.validation.fail3
+      number: 1596
+      type: ERROR
+      text: "Sequence number may only have 4 digits."
+    

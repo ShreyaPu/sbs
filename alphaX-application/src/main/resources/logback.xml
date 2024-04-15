@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="5 seconds">
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%thread] %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="REQUEST_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/AlphaX_Request.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>logs/AlphaX_Request.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxFileSize>10MB</maxFileSize>
+			<totalSizeCap>30GB</totalSizeCap>
+			<maxHistory>60</maxHistory>
+		</rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%msg - %d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] %X{reuquestURL} %X{requestParameters} %X{requestBody}%n</pattern>
+    	</encoder>
+    </appender>
+
+	<appender name="FILE_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/AlphaX_Service.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>logs/AlpaX.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxFileSize>10MB</maxFileSize>
+			<totalSizeCap>30GB</totalSizeCap>
+			<maxHistory>60</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%thread] %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="com.alphax" level="DEBUG" additivity="true">
+		<appender-ref ref="FILE_LOG" />
+	</logger>
+	
+	<logger name="org.springframework" level="INFO" additivity="true">
+		<appender-ref ref="FILE_LOG" />
+	</logger>
+		
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
